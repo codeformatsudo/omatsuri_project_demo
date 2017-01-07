@@ -562,6 +562,11 @@ section.ac-container
     max-height: 120px;
 }
 
+h1
+{
+    margin-top: 0;
+}
+
 .nab > li > a
 {
     padding: 10px 6px;

@@ -37,7 +37,7 @@
 	});
 
 	var firstH = 300;
-	var fixH = 100;
+	var fixH = 140;
 	var fixContent = document.querySelector('.fixInfo');
 	var windowH = window.innerHeight || document.documentElement.clientHeight;
 	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -48,12 +48,12 @@
 	function fixInfo() {
 		$('.fixInfo').animate({
 			height: fixH,
-			top: windowH + scrollTop + 30 - fixH + 'px'
+			top: windowH + scrollTop + 70 - fixH + 'px'
 		}, 3000, 'easeInQuart');
 	}
 
 	function scrollInfo() {
-		fixContent.style.top = windowH + scrollTop + 30 - fixH + 'px';
+		fixContent.style.top = windowH + scrollTop + 70 - fixH + 'px';
 	}
 
 	/*-----headerの縮小-----*/
