@@ -104,6 +104,9 @@ section div
 
     width: 100%;
     padding: 10px 0;
+
+    -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, .4);
+            box-shadow: 0 5px 7px rgba(0, 0, 0, .4);
 }
 .header_siteTitle
 {
@@ -318,11 +321,6 @@ section div
 }
 
 /*---------- sponsors -----------*/
-.sponsors
-{
-    background-color: #eee;
-}
-
 /*---------- nav -----------*/
 .menu-btn
 {
