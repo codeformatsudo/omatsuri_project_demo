@@ -51,4 +51,25 @@
    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
  });
+ //CSVを配列にする
+ function csvToArray(filename, cb) {
+  $.get(filename, function (csvdata, status) {
+   var ret = [];
+   if (status == 'success') {
+    csvdata = csvdata.replace(/\r/gm, "");
+    var line = csvdata.split("\n");
+
+    var i = 0;
+    for (i in line) {
+     //空行はスルーする。
+     if (line[i].length === 0) {
+      continue;
+     }
+     var row = line[i].split(",");
+     ret.push(row);
+    }
+   }
+   cb(ret);
+  });
+ }
 }());
