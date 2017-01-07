@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/css/jquery.mmenu.all.css">
+ <link rel="stylesheet" href="common/css/bootstrap.offcanvas.min.css">
+ <link rel="stylesheet" href="common/css/stacktable.min.css">
+ <link rel="stylesheet" href="common/css/styledLayerControl.min.css">
+ <link rel="stylesheet" href="common/css/style.css">
+ <title></title>
+</head>
+
+<body>
+
+ <!-----header----->
+ <header id="header" class="header">
+  <h1 class="header_siteTitle"></h1>
+ </header>
+
+ <!-----main-img----->
+ <article class="mainImg"></article>
+
+ <!-----home----->
+ <article class="home">
+  <section class="home_date">
+
+  </section>
+  <section class="home_place">
+   <h1 class="sectionTitle"><span>会場</span></h1>
+  </section>
+
+ </article>
+
+ <!-----map----->
+ <article class="map">
+  <section>
+   <div id="map"></div>
+  </section>
+ </article>
+
+ <!-----event----->
+ <article class="event">
+  <section class="event_info">
+   <h1 class="sectionTitle"><span>イベント</span></h1>
+  </section>
+ </article>
+
+ <!-----sponsor----->
+ <article class="sponsors">
+
+ </article>
+ <div class="toTop">
+  <a href="#header" data-scroll>
+   <img src="common/img/totop.png" alt="トップへ戻る">
+  </a>
+ </div>
+ <!-----footer----->
+ <footer>
+
+ </footer>
+ <script src="common/data/sakuradori.geojson"></script>
+ <script src="common/data/toilet.geojson"></script>
+ <script src="common/data/ekimae.geojson"></script>
+ <script src="common/data/tentomura.geojson"></script>
+ <script src="common/data/tyuou.geojson"></script>
+ <script src="common/data/wakuwaku.geojson"></script>
+ <script src="common/data/charity.geojson"></script>
+ <script src="common/data/donation.geojson"></script>
+ <script src="common/data/tyuo-parade.geojson"></script>
+ <script src="common/data/zen-parade.geojson"></script>
+ <script src="common/data/goko-parade.geojson"></script>
+ <script src="common/data/honbu.geojson"></script>
+ <script src="common/data/tent3.geojson"></script>
+ <script src="common/data/tent4.geojson"></script>
+ <script src="common/data/tent5.geojson"></script>
+ <script src="common/data/shelter.geojson"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script src="common/js/bootstrap.offcanvas.min.js"></script>
+
+ <script src="common/js/smooth-scroll.min.js"></script>
+ <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+ <script src="common/js/Leaflet.ControlledBounds.js"></script>
+ <script src="https://domoritz.github.io/leaflet-locatecontrol/dist/L.Control.Locate.min.js">
+ </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/js/jquery.mmenu.min.js"></script>
+ <script src="common/js/main.min.js"></script>
+
+ <script src="common/js/leaflet-providers.min.js"></script>
+ <script src="common/js/leaflet.geocsv.min.js"></script>
+ <script src="common/js/styledLayerControl.min.js"></script>
+ <script src="common/js/map.min.js"></script>
+ <script src="common/js/stacktable.min.js"></script>
+ <script>
+  $(function () {
+   $('.tab-content table').stacktable({
+    myClass: 'stacktable small-only'
+   });
+  });
+
+  smoothScroll.init({
+   speed: 2000,
+   updateURL: false,
+   easing: 'easeOutQuad',
+   updateURL: false
+  });
+ </script>
+ <script src="common/js/link_to_checkbox.min.js"></script>
+
+</body>
+
+</html>

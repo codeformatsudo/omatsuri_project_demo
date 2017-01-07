@@ -1,0 +1,93 @@
+$colors:( is_red: #BE1E3C, is_pink: #EE9CA1, is_black: #000, is_yellow: #FFB60A);
+$subColors:( is_red: #333333, is_pink: #4AA161, is_black: #91200E, is_yellow: #464C5C);
+$bgColors:( is_red: #EEEEEE, is_pink: #F4F4F4, is_black: #EFEFEF, is_yellow: #EFEFEF);
+@each $key,
+$color in $colors {
+ .#{$key} {
+  .header {
+   background-color: $color;
+  }
+  .header_siteTitle {
+   background-color: $color;
+  }
+  /*
+  #modal {
+   background-color: $color;
+  }
+  */
+  li.tab2>a {
+   background-color: $color;
+   opacity: 0.6;
+  }
+  li.tab2.active>a {
+   background-color: $color;
+   opacity: 1;
+  }
+  #tab2 {
+   &.active {
+    .table-small,
+    .table-large {
+     border-top: 4px solid $color;
+    }
+   }
+   tr {
+    border-bottom: 1px solid $color;
+   }
+   .table-small .eventTime {
+    background-color: $color;
+   }
+  }
+  footer {
+   background-color: $color;
+  }
+ }
+}
+
+@each $key,
+$subColor in $subColors {
+ .#{$key} {
+  .fixInfo {
+   background-color: $subColor;
+  }
+  .home_eventDay {
+   color: $subColor;
+  }
+  li.tab1>a {
+   background-color: $subColor;
+   opacity: 0.6;
+  }
+  li.tab1.active>a {
+   background-color: $subColor;
+   opacity: 1;
+  }
+  #tab1 {
+   &.active {
+    .table-small,
+    .table-large {
+     border-top: 4px solid $subColor;
+    }
+   }
+   tr {
+    border-bottom: 1px solid $subColor;
+   }
+   .table-small .eventTime {
+    background-color: $subColor;
+   }
+  }
+ }
+}
+
+@each $key,
+$bgColor in $bgColors {
+ .#{$key} {
+  .home {
+   background-color: $bgColor;
+  }
+  .nav-tabs li.tab>a {
+   background-color: $bgColor;
+  }
+  .sponsors {
+   background-color: $bgColor;
+  }
+ }
+}
