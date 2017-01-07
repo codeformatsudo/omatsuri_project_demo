@@ -183,7 +183,7 @@
    }
   })
   //イベントのお知らせ
- csvToArray('common/data/eventinfo.csv', function (data) {
+ csvToArray('common/data/event-info.csv', function (data) {
   var dataLen = data.length;
   var eventInfoArea = document.querySelector('.event_info');
   if (data[1][0]) {
