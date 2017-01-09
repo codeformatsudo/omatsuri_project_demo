@@ -43,7 +43,7 @@
 	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 	fixContent.style.height = firstH + 'px';
 	fixContent.style.top = windowH - firstH + 'px';
-	document.querySelector('body').style.paddingBottom = fixH + 'px';
+	document.querySelector('body').style.paddingBottom = fixH - 70 + 'px';
 
 	function fixInfo() {
 		$('.fixInfo').animate({
@@ -57,7 +57,6 @@
 	}
 
 	/*-----headerの縮小-----*/
-
 	// スクロールして何ピクセルでアニメーションさせるか
 	var px_change = 300;
 	// スクロールのイベントハンドラを登録
@@ -72,7 +71,6 @@
 	});
 
 	/*-----基本設定-----*/
-
 	//イベントの日時
 	csvToArray('common/data/date.csv', function (data) {
 		var dataLen = data.length;

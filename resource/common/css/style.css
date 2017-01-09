@@ -399,6 +399,62 @@ footer
             box-shadow: 0 -2px 7px rgba(0, 0, 0, .4);
 }
 
+.panel-btn
+{
+    position: relative;
+    z-index: 8888;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    margin: -50px 0 0 90%;
+
+    border-radius: 50%;
+    background: #fff;
+}
+.panel-btn:hover
+{
+    cursor: pointer;
+}
+.panel-btn-icon
+{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+
+    display: block;
+
+    width: 20px;
+    height: 3px;
+    margin-top: 0;
+
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+
+    background: #2196f3;
+}
+.panel-btn-icon:before
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 3px;
+    margin: -2px 0 0 1px;
+
+    content: '';
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+
+    background: #2196f3;
+}
+
 /*---------- modal ----------*/
 /*
 #modal {
@@ -424,7 +480,7 @@ footer
  height: 40px;
  margin: 0px 0 0px 90%;
  border-radius: 50%;
- background: #fff;
+ background: #fff;assssssss
  &:hover {
   cursor: pointer;
  }
