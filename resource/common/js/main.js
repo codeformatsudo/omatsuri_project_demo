@@ -119,24 +119,43 @@
 
 		// タイトル
 		var title = document.querySelector('.header_siteTitle');
-
 		title.innerHTML = data[1][1];
+
 		// headのタイトル
 		var headTitle = document.createElement('meta');
 		headTitle.setAttribute('title', title);
 		document.getElementsByTagName('head')[0].appendChild(headTitle);
+
 		// headのdescription
 		var descriptionData = data[1][2];
 		var description = document.createElement('meta');
 		description.setAttribute('description', descriptionData);
 		document.getElementsByTagName('head')[0].appendChild(description);
+
 		// メイン画像
 		if (data[1][2]) {
+
 			var mainImg = document.createElement('img');
-			var imgSrc = data[1][3];
-			mainImg.src = imgSrc;
+
+			mainImg.src = data[1][3];
 			mainImg.className = "mainImg_img";
 			document.querySelector('.mainImg').appendChild(mainImg);
+
+			var image = new Image();
+			image.src = data[1][3];
+
+			image.onload = function () {
+				var width = image.width;
+				var height = image.height;
+				if (width < height) {
+					var imgClass = document.querySelector('.mainImg_img');
+					imgClass.style.width = '60%';
+					imgClass.style.marginLeft = '20%';
+				}
+			};
+
+
+
 		}
 		//雨天時の注意
 		if (data[1][4]) {
@@ -247,7 +266,7 @@
 
 	csvToArray('common/data/event-1.csv', function (data) {
 		var k = 1;
-		if (data) {
+		if (data[0][0]) {
 			createEventTable(data, k);
 		}
 		createSmallerTable(k);
@@ -255,7 +274,7 @@
 
 	csvToArray('common/data/event-2.csv', function (data) {
 		var k = 2;
-		if (data) {
+		if (data[0][0]) {
 			createEventTable(data, k);
 		}
 		createSmallerTable(k);
