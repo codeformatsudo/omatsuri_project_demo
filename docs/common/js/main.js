@@ -11,7 +11,7 @@
 	/*-----注意案内の作成-----*/
 	//注意文の読み込み
 	$.ajax({
-		url: 'common/data/info.txt',
+		url: 'data/info.txt',
 		timeout: 1000,
 		success: function (data) {
 			if (data.length === 0) {
@@ -72,7 +72,7 @@
 
 	/*-----基本設定-----*/
 	//イベントの日時
-	csvToArray('common/data/date.csv', function (data) {
+	csvToArray('data/date.csv', function (data) {
 		var dataLen = data.length;
 		var i = 1; //1行目を除く
 		var dateArea = document.querySelector('.home_date');
@@ -99,7 +99,7 @@
 		}
 	});
 	// 基本色、サイトタイトル、サイトの説明、メイン画像を設定
-	csvToArray('common/data/info.csv', function (data) {
+	csvToArray('data/info.csv', function (data) {
 		//bodyに色のクラスを設定
 		var colorData = data[1][0];
 		switch (colorData) {
@@ -147,10 +147,12 @@
 			image.onload = function () {
 				var width = image.width;
 				var height = image.height;
-				if (width < height) {
+				var windowW = window.innerWidth || document.documentElement.clientWidth;
+				if (width < height && windowW > 768) {
 					var imgClass = document.querySelector('.mainImg_img');
 					imgClass.style.width = '60%';
 					imgClass.style.marginLeft = '20%';
+					console.log(windowW)
 				}
 			};
 
@@ -169,7 +171,7 @@
 	/*-----イベントスケジュールの作成-----*/
 
 	//アクセス
-	csvToArray('common/data/access.csv', function (data) {
+	csvToArray('data/access.csv', function (data) {
 		//場所
 		var accessArea = document.querySelector('.home_place');
 		var dataLen = data.length;
@@ -209,7 +211,7 @@
 		}
 	});
 	//注意
-	csvToArray('common/data/caution.csv', function (data) {
+	csvToArray('data/caution.csv', function (data) {
 			var dataLen = data.length;
 			if (dataLen - 1 > 0) {
 				var cautionArea = document.createElement('section');
@@ -232,7 +234,7 @@
 			}
 		})
 		//イベントのお知らせ
-	csvToArray('common/data/event-info.csv', function (data) {
+	csvToArray('data/event-info.csv', function (data) {
 		var dataLen = data.length;
 		var eventInfoArea = document.querySelector('.event_info');
 		if (data[1][0]) {
@@ -264,24 +266,24 @@
 	eventSection.appendChild(tabParentDiv);
 	//イベントデータを読み込む
 
-	csvToArray('common/data/event-1.csv', function (data) {
+	csvToArray('data/event-1.csv', function (data) {
 		var k = 1;
 		if (data[0][0]) {
 			createEventTable(data, k);
+			createSmallerTable(k);
 		}
-		createSmallerTable(k);
 	});
 
-	csvToArray('common/data/event-2.csv', function (data) {
+	csvToArray('data/event-2.csv', function (data) {
 		var k = 2;
 		if (data[0][0]) {
 			createEventTable(data, k);
+			createSmallerTable(k);
 		}
-		createSmallerTable(k);
 	});
 
 	//主催・後援・協力・協賛
-	csvToArray('common/data/sponsors.csv', function (data) {
+	csvToArray('data/sponsors.csv', function (data) {
 		var i = 0;
 		var dataLen = data.length;
 		var sponsors = document.querySelector('.sponsors');
