@@ -109,6 +109,9 @@
 		case 'ピンク':
 			document.querySelector('body').classList.add('is_pink');
 			break;
+		case 'ピンク2':
+			document.querySelector('body').classList.add('is_pink2');
+			break;
 		case '黒':
 			document.querySelector('body').classList.add('is_black');
 			break;
