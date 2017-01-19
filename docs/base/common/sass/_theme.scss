@@ -1,6 +1,7 @@
 $colors:( is_red: #BE1E3C, is_pink: #EE9CA1, is_pink2: #EE9CA1, is_black: #000, is_yellow: #FFB60A);
 $subColors:( is_red: #333333, is_pink: #4AA161, is_pink2: #FFBFC2, is_black: #91200E, is_yellow: #464C5C);
 $bgColors:( is_red: #EEEEEE, is_pink: #F4F4F4, is_pink2: #F4F4F4, is_black: #EFEFEF, is_yellow: #EFEFEF);
+
 @each $key,
 $color in $colors {
 	.#{$key} {
@@ -10,11 +11,6 @@ $color in $colors {
 		.header_siteTitle {
 			background-color: $color;
 		}
-		/*
-  #modal {
-   background-color: $color;
-  }
-  */
 		li.tab2>a {
 			background-color: $color;
 			opacity: 0.6;

@@ -100,18 +100,18 @@
 	});
 
 	// 基本色、サイトタイトル、サイトの説明、メイン画像を設定
-	csvToArray('common/data/info.csv', function (data) {
-		//bodyに色のクラスを設定
+	csvToArray('data/info.csv', function (data) {
+		//bodyに色のクラスを設定 _theme.scssで設定
 		var colorData = data[1][0];
 		switch (colorData) {
 		case '赤':
 			document.querySelector('body').classList.add('is_red');
 			break;
 		case 'ピンク':
-			document.querySelector('body').classList.add('is_pink');
+			document.querySelector('body').classList.add('is_pinkGreen');
 			break;
 		case 'ピンク2':
-			document.querySelector('body').classList.add('is_pink2');
+			document.querySelector('body').classList.add('is_pinkPink');
 			break;
 		case '黒':
 			document.querySelector('body').classList.add('is_black');
@@ -138,7 +138,6 @@
 
 		// メイン画像
 		if (data[1][2]) {
-
 			var mainImg = document.createElement('img');
 
 			mainImg.src = data[1][3];
@@ -171,7 +170,6 @@
 	});
 
 	/*-----イベントスケジュールの作成-----*/
-
 	//アクセス
 	csvToArray('data/access.csv', function (data) {
 		//場所

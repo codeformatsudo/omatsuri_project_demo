@@ -502,393 +502,393 @@ table.restables-clone {
   table.restables-clone {
     display: table; } }
 
-/* line 6, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_red {
-  /*
-  #modal {
-   background-color: $color;
-  }
-  */ }
-  /* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red .header {
-    background-color: #BE1E3C; }
-  /* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red .header_siteTitle {
-    background-color: #BE1E3C; }
-  /* line 18, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red li.tab2 > a {
-    background-color: #BE1E3C;
-    opacity: 0.6; }
-  /* line 22, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red li.tab2.active > a {
-    background-color: #BE1E3C;
-    opacity: 1; }
-  /* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red #tab2.active .table-small,
-  .is_red #tab2.active .table-large {
-    border-top: 4px solid #BE1E3C; }
-  /* line 33, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red #tab2 tr {
-    border-bottom: 1px solid #BE1E3C; }
-  /* line 36, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red #tab2 .table-small .eventTime {
-    background-color: #BE1E3C; }
-  /* line 40, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_red footer {
-    background-color: #BE1E3C; }
+/* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red .header {
+  background-color: #BE1E3C; }
 
-/* line 6, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink {
-  /*
-  #modal {
-   background-color: $color;
-  }
-  */ }
-  /* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink .header {
-    background-color: #EE9CA1; }
-  /* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink .header_siteTitle {
-    background-color: #EE9CA1; }
-  /* line 18, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink li.tab2 > a {
-    background-color: #EE9CA1;
-    opacity: 0.6; }
-  /* line 22, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink li.tab2.active > a {
-    background-color: #EE9CA1;
-    opacity: 1; }
-  /* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink #tab2.active .table-small,
-  .is_pink #tab2.active .table-large {
-    border-top: 4px solid #EE9CA1; }
-  /* line 33, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink #tab2 tr {
-    border-bottom: 1px solid #EE9CA1; }
-  /* line 36, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink #tab2 .table-small .eventTime {
-    background-color: #EE9CA1; }
-  /* line 40, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink footer {
-    background-color: #EE9CA1; }
+/* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red .header_siteTitle {
+  background-color: #BE1E3C; }
 
-/* line 6, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 {
-  /*
-  #modal {
-   background-color: $color;
-  }
-  */ }
-  /* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 .header {
-    background-color: #EE9CA1; }
-  /* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 .header_siteTitle {
-    background-color: #EE9CA1; }
-  /* line 18, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 li.tab2 > a {
-    background-color: #EE9CA1;
-    opacity: 0.6; }
-  /* line 22, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 li.tab2.active > a {
-    background-color: #EE9CA1;
-    opacity: 1; }
-  /* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 #tab2.active .table-small,
-  .is_pink2 #tab2.active .table-large {
-    border-top: 4px solid #EE9CA1; }
-  /* line 33, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 #tab2 tr {
-    border-bottom: 1px solid #EE9CA1; }
-  /* line 36, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 #tab2 .table-small .eventTime {
-    background-color: #EE9CA1; }
-  /* line 40, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_pink2 footer {
-    background-color: #EE9CA1; }
+/* line 13, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red li.tab2 > a {
+  background-color: #BE1E3C;
+  opacity: 0.6; }
 
-/* line 6, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_black {
-  /*
-  #modal {
-   background-color: $color;
-  }
-  */ }
-  /* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black .header {
-    background-color: #000; }
-  /* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black .header_siteTitle {
-    background-color: #000; }
-  /* line 18, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black li.tab2 > a {
-    background-color: #000;
-    opacity: 0.6; }
-  /* line 22, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black li.tab2.active > a {
-    background-color: #000;
-    opacity: 1; }
-  /* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black #tab2.active .table-small,
-  .is_black #tab2.active .table-large {
-    border-top: 4px solid #000; }
-  /* line 33, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black #tab2 tr {
-    border-bottom: 1px solid #000; }
-  /* line 36, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black #tab2 .table-small .eventTime {
-    background-color: #000; }
-  /* line 40, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_black footer {
-    background-color: #000; }
+/* line 17, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red li.tab2.active > a {
+  background-color: #BE1E3C;
+  opacity: 1; }
 
-/* line 6, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_yellow {
-  /*
-  #modal {
-   background-color: $color;
-  }
-  */ }
-  /* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow .header {
-    background-color: #FFB60A; }
-  /* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow .header_siteTitle {
-    background-color: #FFB60A; }
-  /* line 18, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow li.tab2 > a {
-    background-color: #FFB60A;
-    opacity: 0.6; }
-  /* line 22, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow li.tab2.active > a {
-    background-color: #FFB60A;
-    opacity: 1; }
-  /* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow #tab2.active .table-small,
-  .is_yellow #tab2.active .table-large {
-    border-top: 4px solid #FFB60A; }
-  /* line 33, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow #tab2 tr {
-    border-bottom: 1px solid #FFB60A; }
-  /* line 36, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow #tab2 .table-small .eventTime {
-    background-color: #FFB60A; }
-  /* line 40, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-  .is_yellow footer {
-    background-color: #FFB60A; }
+/* line 23, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red #tab2.active .table-small,
+.is_red #tab2.active .table-large {
+  border-top: 4px solid #BE1E3C; }
 
-/* line 49, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red #tab2 tr {
+  border-bottom: 1px solid #BE1E3C; }
+
+/* line 31, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red #tab2 .table-small .eventTime {
+  background-color: #BE1E3C; }
+
+/* line 35, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_red footer {
+  background-color: #BE1E3C; }
+
+/* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .header {
+  background-color: #EE9CA1; }
+
+/* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .header_siteTitle {
+  background-color: #EE9CA1; }
+
+/* line 13, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen li.tab2 > a {
+  background-color: #EE9CA1;
+  opacity: 0.6; }
+
+/* line 17, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen li.tab2.active > a {
+  background-color: #EE9CA1;
+  opacity: 1; }
+
+/* line 23, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen #tab2.active .table-small,
+.is_pinkGreen #tab2.active .table-large {
+  border-top: 4px solid #EE9CA1; }
+
+/* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen #tab2 tr {
+  border-bottom: 1px solid #EE9CA1; }
+
+/* line 31, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen #tab2 .table-small .eventTime {
+  background-color: #EE9CA1; }
+
+/* line 35, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen footer {
+  background-color: #EE9CA1; }
+
+/* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .header {
+  background-color: #EE9CA1; }
+
+/* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .header_siteTitle {
+  background-color: #EE9CA1; }
+
+/* line 13, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink li.tab2 > a {
+  background-color: #EE9CA1;
+  opacity: 0.6; }
+
+/* line 17, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink li.tab2.active > a {
+  background-color: #EE9CA1;
+  opacity: 1; }
+
+/* line 23, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink #tab2.active .table-small,
+.is_pinkPink #tab2.active .table-large {
+  border-top: 4px solid #EE9CA1; }
+
+/* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink #tab2 tr {
+  border-bottom: 1px solid #EE9CA1; }
+
+/* line 31, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink #tab2 .table-small .eventTime {
+  background-color: #EE9CA1; }
+
+/* line 35, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink footer {
+  background-color: #EE9CA1; }
+
+/* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black .header {
+  background-color: #000; }
+
+/* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black .header_siteTitle {
+  background-color: #000; }
+
+/* line 13, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black li.tab2 > a {
+  background-color: #000;
+  opacity: 0.6; }
+
+/* line 17, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black li.tab2.active > a {
+  background-color: #000;
+  opacity: 1; }
+
+/* line 23, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black #tab2.active .table-small,
+.is_black #tab2.active .table-large {
+  border-top: 4px solid #000; }
+
+/* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black #tab2 tr {
+  border-bottom: 1px solid #000; }
+
+/* line 31, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black #tab2 .table-small .eventTime {
+  background-color: #000; }
+
+/* line 35, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_black footer {
+  background-color: #000; }
+
+/* line 7, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow .header {
+  background-color: #FFB60A; }
+
+/* line 10, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow .header_siteTitle {
+  background-color: #FFB60A; }
+
+/* line 13, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow li.tab2 > a {
+  background-color: #FFB60A;
+  opacity: 0.6; }
+
+/* line 17, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow li.tab2.active > a {
+  background-color: #FFB60A;
+  opacity: 1; }
+
+/* line 23, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow #tab2.active .table-small,
+.is_yellow #tab2.active .table-large {
+  border-top: 4px solid #FFB60A; }
+
+/* line 28, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow #tab2 tr {
+  border-bottom: 1px solid #FFB60A; }
+
+/* line 31, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow #tab2 .table-small .eventTime {
+  background-color: #FFB60A; }
+
+/* line 35, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_yellow footer {
+  background-color: #FFB60A; }
+
+/* line 44, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red .fixInfo {
   background-color: #333333; }
 
-/* line 52, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 47, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red .home_eventDay {
   color: #333333; }
 
-/* line 55, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 50, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red li.tab1 > a {
   background-color: #333333;
   opacity: 0.6; }
 
-/* line 59, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 54, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red li.tab1.active > a {
   background-color: #333333;
   opacity: 1; }
 
-/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 60, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red #tab1.active .table-small,
 .is_red #tab1.active .table-large {
   border-top: 4px solid #333333; }
 
-/* line 70, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red #tab1 tr {
   border-bottom: 1px solid #333333; }
 
-/* line 73, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 68, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red #tab1 .table-small .eventTime {
   background-color: #333333; }
 
-/* line 49, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink .fixInfo {
+/* line 44, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .fixInfo {
   background-color: #4AA161; }
 
-/* line 52, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink .home_eventDay {
+/* line 47, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .home_eventDay {
   color: #4AA161; }
 
-/* line 55, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink li.tab1 > a {
+/* line 50, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen li.tab1 > a {
   background-color: #4AA161;
   opacity: 0.6; }
 
-/* line 59, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink li.tab1.active > a {
+/* line 54, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen li.tab1.active > a {
   background-color: #4AA161;
   opacity: 1; }
 
-/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink #tab1.active .table-small,
-.is_pink #tab1.active .table-large {
+/* line 60, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen #tab1.active .table-small,
+.is_pinkGreen #tab1.active .table-large {
   border-top: 4px solid #4AA161; }
 
-/* line 70, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink #tab1 tr {
+/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen #tab1 tr {
   border-bottom: 1px solid #4AA161; }
 
-/* line 73, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink #tab1 .table-small .eventTime {
+/* line 68, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen #tab1 .table-small .eventTime {
   background-color: #4AA161; }
 
-/* line 49, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 .fixInfo {
+/* line 44, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .fixInfo {
   background-color: #FFBFC2; }
 
-/* line 52, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 .home_eventDay {
+/* line 47, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .home_eventDay {
   color: #FFBFC2; }
 
-/* line 55, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 li.tab1 > a {
+/* line 50, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink li.tab1 > a {
   background-color: #FFBFC2;
   opacity: 0.6; }
 
-/* line 59, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 li.tab1.active > a {
+/* line 54, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink li.tab1.active > a {
   background-color: #FFBFC2;
   opacity: 1; }
 
-/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 #tab1.active .table-small,
-.is_pink2 #tab1.active .table-large {
+/* line 60, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink #tab1.active .table-small,
+.is_pinkPink #tab1.active .table-large {
   border-top: 4px solid #FFBFC2; }
 
-/* line 70, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 #tab1 tr {
+/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink #tab1 tr {
   border-bottom: 1px solid #FFBFC2; }
 
-/* line 73, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 #tab1 .table-small .eventTime {
+/* line 68, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink #tab1 .table-small .eventTime {
   background-color: #FFBFC2; }
 
-/* line 49, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 44, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black .fixInfo {
   background-color: #91200E; }
 
-/* line 52, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 47, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black .home_eventDay {
   color: #91200E; }
 
-/* line 55, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 50, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black li.tab1 > a {
   background-color: #91200E;
   opacity: 0.6; }
 
-/* line 59, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 54, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black li.tab1.active > a {
   background-color: #91200E;
   opacity: 1; }
 
-/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 60, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black #tab1.active .table-small,
 .is_black #tab1.active .table-large {
   border-top: 4px solid #91200E; }
 
-/* line 70, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black #tab1 tr {
   border-bottom: 1px solid #91200E; }
 
-/* line 73, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 68, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black #tab1 .table-small .eventTime {
   background-color: #91200E; }
 
-/* line 49, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 44, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow .fixInfo {
   background-color: #464C5C; }
 
-/* line 52, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 47, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow .home_eventDay {
   color: #464C5C; }
 
-/* line 55, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 50, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow li.tab1 > a {
   background-color: #464C5C;
   opacity: 0.6; }
 
-/* line 59, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 54, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow li.tab1.active > a {
   background-color: #464C5C;
   opacity: 1; }
 
-/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 60, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow #tab1.active .table-small,
 .is_yellow #tab1.active .table-large {
   border-top: 4px solid #464C5C; }
 
-/* line 70, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 65, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow #tab1 tr {
   border-bottom: 1px solid #464C5C; }
 
-/* line 73, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 68, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow #tab1 .table-small .eventTime {
   background-color: #464C5C; }
 
-/* line 83, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 78, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red .home {
   background-color: #EEEEEE; }
 
-/* line 86, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 81, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red .nav-tabs li.tab > a {
   background-color: #EEEEEE; }
 
-/* line 89, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 84, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_red .sponsors {
   background-color: #EEEEEE; }
 
-/* line 83, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink .home {
+/* line 78, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .home {
   background-color: #F4F4F4; }
 
-/* line 86, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink .nav-tabs li.tab > a {
+/* line 81, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .nav-tabs li.tab > a {
   background-color: #F4F4F4; }
 
-/* line 89, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink .sponsors {
+/* line 84, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkGreen .sponsors {
   background-color: #F4F4F4; }
 
-/* line 83, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 .home {
+/* line 78, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .home {
   background-color: #F4F4F4; }
 
-/* line 86, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 .nav-tabs li.tab > a {
+/* line 81, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .nav-tabs li.tab > a {
   background-color: #F4F4F4; }
 
-/* line 89, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
-.is_pink2 .sponsors {
+/* line 84, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+.is_pinkPink .sponsors {
   background-color: #F4F4F4; }
 
-/* line 83, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 78, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black .home {
   background-color: #EFEFEF; }
 
-/* line 86, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 81, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black .nav-tabs li.tab > a {
   background-color: #EFEFEF; }
 
-/* line 89, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 84, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_black .sponsors {
   background-color: #EFEFEF; }
 
-/* line 83, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 78, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow .home {
   background-color: #EFEFEF; }
 
-/* line 86, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 81, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow .nav-tabs li.tab > a {
   background-color: #EFEFEF; }
 
-/* line 89, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
+/* line 84, C:/omatsuri_project/resource/base/common/sass/_theme.scss */
 .is_yellow .sponsors {
   background-color: #EFEFEF; }
 
