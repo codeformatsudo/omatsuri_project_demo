@@ -39,8 +39,8 @@
 		var map = L.map('map').setView([lat, lng], zoomSize);
 
 		var icon = L.icon({
-			iconUrl: 'css/images/marker-icon.png',
-			shadowUrl: 'css/images/marker-shadow.png',
+			iconUrl: 'common/css/images/marker-icon.png',
+			shadowUrl: 'common/css/images/marker-shadow.png',
 			iconSize: [25, 42],
 			shadowSize: [41, 41],
 			iconAnchor: [22, 94],
