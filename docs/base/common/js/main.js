@@ -98,8 +98,9 @@
 			}
 		}
 	});
+
 	// 基本色、サイトタイトル、サイトの説明、メイン画像を設定
-	csvToArray('data/info.csv', function (data) {
+	csvToArray('common/data/info.csv', function (data) {
 		//bodyに色のクラスを設定
 		var colorData = data[1][0];
 		switch (colorData) {
@@ -158,10 +159,8 @@
 					console.log(windowW)
 				}
 			};
-
-
-
 		}
+
 		//雨天時の注意
 		if (data[1][4]) {
 			var caution = document.createElement('div');
