@@ -25,9 +25,9 @@
 	var zoomSize = '';
 	var w = $(window).width();
 	if (w <= 768) {
-		zoomSize = 15;
+		zoomSize = 17;
 	} else {
-		zoomSize = 16;
+		zoomSize = 18;
 	}
 
 	//マップデータの読み込み

@@ -131,6 +131,21 @@ section div
     padding: 10px 0;
 }
 
+/*---------- twitter button -----------*/
+.twitter-button
+{
+    position: fixed;
+    z-index: 1200;
+
+    padding: 4px 14px;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(71, 31, 82, .8);
+    -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .4);
+            box-shadow: 0 2px 7px rgba(0, 0, 0, .4);
+}
+
 /*---------- mainImg -----------*/
 .mainImg
 {

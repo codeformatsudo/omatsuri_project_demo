@@ -8,12 +8,56 @@
 		easing: 'easeOutQuad'
 	});
 
-	/*-----注意案内の作成-----*/
-	//注意文の読み込み
+	/*-----twitterButton設定-----*/
+	function leftButton() {
+		var windowH = window.innerHeight || document.documentElement.clientHeight;
+
+		var twitterButton = document.querySelector('.twitter-button');
+
+		twitterButton.style.top = windowH - 90 + 'px';
+	}
+	$(window).on('load resize orientationchange', function () {
+		leftButton();
+	});
+	/*-----mmenu設定-----*/
+	$("#leftSlidebar").mmenu({
+		slidingSubmenus: false,
+		offCanvas: {
+			position: 'left',
+			zposition: 'front'
+		}
+	});
+
+	/*--URLのエンコード--*/
 	$.ajax({
 		url: 'data/info.txt',
 		timeout: 1000,
 		success: function (data) {
+			console.log(data)
+			if (data.length === 0) {
+				$('.twitter-button').css({
+					'display': 'none'
+				})
+			} else {
+				var encstr = encodeURI(data);
+				$('a.twitter-timeline').attr('href', 'https://twitter.com/search?q=' + encstr);
+			}
+		},
+		error: function () {
+			alert("「お知らせ」の取得に失敗しました");
+		}
+	});
+
+
+
+	/*-----注意案内の作成-----*/
+	//注意文の読み込み
+	/*
+	$.ajax({
+		url: 'data/info.txt',
+		timeout: 1000,
+		success: function (data) {
+			console.log(data)
 			if (data.length === 0) {
 				$('.fixInfo').css({
 					'display': 'none'
@@ -55,7 +99,7 @@
 	function scrollInfo() {
 		fixContent.style.top = windowH + scrollTop + 70 - fixH + 'px';
 	}
-
+/*
 	/*-----headerの縮小-----*/
 	// スクロールして何ピクセルでアニメーションさせるか
 	var px_change = 300;
@@ -104,21 +148,21 @@
 		//bodyに色のクラスを設定 _theme.scssで設定
 		var colorData = data[1][0];
 		switch (colorData) {
-		case '赤':
-			document.querySelector('body').classList.add('is_red');
-			break;
-		case 'ピンク':
-			document.querySelector('body').classList.add('is_pinkGreen');
-			break;
-		case 'ピンク2':
-			document.querySelector('body').classList.add('is_pinkPink');
-			break;
-		case '黒':
-			document.querySelector('body').classList.add('is_black');
-			break;
-		case '黄色':
-			document.querySelector('body').classList.add('is_yellow');
-			break;
+			case '赤':
+				document.querySelector('body').classList.add('is_red');
+				break;
+			case 'ピンク':
+				document.querySelector('body').classList.add('is_pinkGreen');
+				break;
+			case 'ピンク2':
+				document.querySelector('body').classList.add('is_pinkPink');
+				break;
+			case '黒':
+				document.querySelector('body').classList.add('is_black');
+				break;
+			case '黄色':
+				document.querySelector('body').classList.add('is_yellow');
+				break;
 		}
 
 		// タイトル
@@ -155,7 +199,6 @@
 					var imgClass = document.querySelector('.mainImg_img');
 					imgClass.style.width = '60%';
 					imgClass.style.marginLeft = '20%';
-					console.log(windowW)
 				}
 			};
 		}
@@ -212,28 +255,28 @@
 	});
 	//注意
 	csvToArray('data/caution.csv', function (data) {
-			var dataLen = data.length;
-			if (dataLen - 1 > 0) {
-				var cautionArea = document.createElement('section');
-				document.querySelector('.home').appendChild(cautionArea);
-				var h1Area = document.createElement('h1');
-				var span = document.createElement('span');
-				span.innerHTML = "ご注意";
-				h1Area.appendChild(span);
-				h1Area.classList.add('home-caution');
-				h1Area.classList.add('sectionTitle');
-				cautionArea.appendChild(h1Area);
-				var cautionUl = document.createElement('ul');
-				cautionArea.appendChild(cautionUl);
-				var i = 1;
-				for (i; i < dataLen; i++) {
-					var cautionLi = document.createElement('li');
-					cautionLi.innerHTML = data[i];
-					cautionUl.appendChild(cautionLi);
-				}
+		var dataLen = data.length;
+		if (dataLen - 1 > 0) {
+			var cautionArea = document.createElement('section');
+			document.querySelector('.home').appendChild(cautionArea);
+			var h1Area = document.createElement('h1');
+			var span = document.createElement('span');
+			span.innerHTML = "ご注意";
+			h1Area.appendChild(span);
+			h1Area.classList.add('home-caution');
+			h1Area.classList.add('sectionTitle');
+			cautionArea.appendChild(h1Area);
+			var cautionUl = document.createElement('ul');
+			cautionArea.appendChild(cautionUl);
+			var i = 1;
+			for (i; i < dataLen; i++) {
+				var cautionLi = document.createElement('li');
+				cautionLi.innerHTML = data[i];
+				cautionUl.appendChild(cautionLi);
 			}
-		})
-		//イベントのお知らせ
+		}
+	})
+	//イベントのお知らせ
 	csvToArray('data/event-info.csv', function (data) {
 		var dataLen = data.length;
 		var eventInfoArea = document.querySelector('.event_info');
