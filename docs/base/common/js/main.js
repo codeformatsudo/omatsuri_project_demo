@@ -28,27 +28,28 @@
 		}
 	});
 
-	/*--URLのエンコード--*/
-	$.ajax({
-		url: 'data/info.txt',
-		timeout: 1000,
-		success: function (data) {
-			console.log(data)
-			if (data.length === 0) {
-				$('.twitter-button').css({
-					'display': 'none'
-				})
-			} else {
-				var encstr = encodeURI(data);
-				$('a.twitter-timeline').attr('href', 'https://twitter.com/search?q=' + encstr);
+	/*--twitterウィジェット--*/
+	/*
+		$.ajax({
+			url: 'data/info.txt',
+			timeout: 1000,
+			success: function (data) {
+				console.log(data)
+				if (data.length === 0) {
+					$('.twitter-button').css({
+						'display': 'none'
+					})
+				} else {
+
+					$('.mm-panels').html = data;
+				}
+			},
+			error: function () {
+				alert("「お知らせ」の取得に失敗しました");
 			}
-		},
-		error: function () {
-			alert("「お知らせ」の取得に失敗しました");
-		}
-	});
+		});
 
-
+	*/
 
 	/*-----注意案内の作成-----*/
 	//注意文の読み込み
