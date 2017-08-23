@@ -6,7 +6,7 @@
 	/*--twitterウィジェット--*/
 
 	$.ajax({
-		url: 'data/info.txt',
+		url: 'data/twitterWidget.txt',
 		timeout: 1000,
 		success: function (data) {
 
