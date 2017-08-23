@@ -1,6 +1,9 @@
 (function () {
 	"use strict";
 
+	var w = $(window).width();
+	var h = $(window).height();
+
 	//mapSize
 	function mapSize() {
 		if (w > 768) {
