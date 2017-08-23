@@ -32,7 +32,7 @@ footer
 /*---------- section ----------*/
 section
 {
-    line-height: 1.6;
+    line-height: 1.6; 
 
     width: 100%;
     max-width: 1080px;
@@ -48,7 +48,7 @@ section div
 {
     overflow: hidden;
 
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 
     text-align: center;
 }
@@ -61,7 +61,7 @@ section div
 
     display: inline-block;
 
-    margin: 0 auto;
+    margin: 0 auto; 
 
     text-align: center;
 }
@@ -83,7 +83,7 @@ section div
     position: absolute;
     top: 0;
 
-    width: 600px;
+    width: 600px; 
     height: 23px;
 
     content: '';
@@ -100,7 +100,7 @@ section div
 .header
 {
     position: fixed;
-    z-index: 2000;
+    z-index: 2000; 
 
     width: 100%;
     padding: 10px 0;
@@ -116,7 +116,7 @@ section div
     margin: 0;
     padding: 20px 0;
 
-    text-align: center;
+    text-align: center; 
 
     color: #fff;
 }
@@ -140,7 +140,7 @@ section div
     padding: 4px 14px;
 
     border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
     background-color: rgba(71, 31, 82, .8);
     -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .4);
             box-shadow: 0 2px 7px rgba(0, 0, 0, .4);
@@ -150,12 +150,11 @@ section div
 .mainImg
 {
     position: relative;
-    top: 60px;
 }
 .mainImg_img
 {
     width: 100%;
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
 }
 
@@ -167,9 +166,9 @@ section div
 
 .home
 {
-    position: relative;
+    position: relative; 
 
-    margin: 60px auto 0 auto;
+    margin: -20px auto 0 auto;
 }
 .home_date
 {
@@ -219,7 +218,7 @@ section div
 
 .event_day
 {
-    font-size: .9em;
+    font-size: .9em; 
 
     padding-left: 30px;
 }
@@ -245,9 +244,14 @@ section div
 .nav-tabs li.tab2 > a,
 .nav-tabs li.tab3 > a
 {
-    font-weight: 800;
+    font-weight: 800; 
 
     color: #fff;
+}
+
+table
+{
+    width: 100%;
 }
 
 .table-small
@@ -258,7 +262,7 @@ section div
 }
 .table-small th
 {
-    width: 40%;
+    width: 40%; 
 
     text-align: right;
 }
@@ -345,7 +349,7 @@ section div
 
     display: block;
 
-    width: 45px;
+    width: 45px; 
     height: 45px;
 
     background: url(btn-menu.gif) no-repeat left top;
@@ -360,7 +364,7 @@ section div
 
     display: block;
 
-    width: 45px;
+    width: 45px; 
     height: 45px;
 
     background: url(btn-tooltip.gif) no-repeat left top;
@@ -386,7 +390,7 @@ section div
 /*---------- footer -----------*/
 footer
 {
-    font-weight: 500;
+    font-weight: 500; 
 
     text-align: center;
 
@@ -397,7 +401,7 @@ footer
 .fixInfo
 {
     position: fixed;
-    z-index: 9999;
+    z-index: 9999; 
 
     overflow: auto;
 
@@ -417,7 +421,7 @@ footer
 .panel-btn
 {
     position: relative;
-    z-index: 8888;
+    z-index: 8888; 
 
     display: inline-block;
 
@@ -446,7 +450,7 @@ footer
 
     -webkit-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
-            transform: rotate(-135deg);
+            transform: rotate(-135deg); 
 
     background: #2196f3;
 }
@@ -465,7 +469,7 @@ footer
     content: '';
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+            transform: rotate(-90deg); 
 
     background: #2196f3;
 }
@@ -553,7 +557,7 @@ footer
     }
     .home_eventInfo
     {
-            flex-direction: column;
+            flex-direction: column; 
 
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -614,7 +618,7 @@ section.ac-container
 
 .leaflet-control-layers:hover
 {
-    background-color: #fff;
+    background-color: #fff; 
     background-image: none;
 }
 
@@ -683,13 +687,13 @@ table.restables-clone
 
 .is_red li.tab2 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #be1e3c;
 }
 
 .is_red li.tab2.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #be1e3c;
 }
 
@@ -726,13 +730,13 @@ table.restables-clone
 
 .is_pinkGreen li.tab2 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #ee9ca1;
 }
 
 .is_pinkGreen li.tab2.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #ee9ca1;
 }
 
@@ -769,13 +773,13 @@ table.restables-clone
 
 .is_pinkPink li.tab2 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #ee9ca1;
 }
 
 .is_pinkPink li.tab2.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #ee9ca1;
 }
 
@@ -812,13 +816,13 @@ table.restables-clone
 
 .is_black li.tab2 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #000;
 }
 
 .is_black li.tab2.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #000;
 }
 
@@ -855,13 +859,13 @@ table.restables-clone
 
 .is_yellow li.tab2 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #ffb60a;
 }
 
 .is_yellow li.tab2.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #ffb60a;
 }
 
@@ -898,13 +902,13 @@ table.restables-clone
 
 .is_red li.tab1 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #333;
 }
 
 .is_red li.tab1.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #333;
 }
 
@@ -936,13 +940,13 @@ table.restables-clone
 
 .is_pinkGreen li.tab1 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #4aa161;
 }
 
 .is_pinkGreen li.tab1.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #4aa161;
 }
 
@@ -974,13 +978,13 @@ table.restables-clone
 
 .is_pinkPink li.tab1 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #ffbfc2;
 }
 
 .is_pinkPink li.tab1.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #ffbfc2;
 }
 
@@ -1012,13 +1016,13 @@ table.restables-clone
 
 .is_black li.tab1 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #91200e;
 }
 
 .is_black li.tab1.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #91200e;
 }
 
@@ -1050,13 +1054,13 @@ table.restables-clone
 
 .is_yellow li.tab1 > a
 {
-    opacity: .6;
+    opacity: .6; 
     background-color: #464c5c;
 }
 
 .is_yellow li.tab1.active > a
 {
-    opacity: 1;
+    opacity: 1; 
     background-color: #464c5c;
 }
 

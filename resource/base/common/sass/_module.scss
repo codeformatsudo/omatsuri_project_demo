@@ -90,7 +90,6 @@ section {
 
 .mainImg {
 	position: relative;
-	top: 60px;
 	&_img {
 		height: auto;
 		width: 100%;
@@ -106,7 +105,7 @@ section {
 }
 
 .home {
-	margin: 60px auto 0 auto;
+	margin: -20px auto 0 auto;
 	position: relative;
 	&_date {
 		margin: 20px auto;
@@ -165,6 +164,10 @@ section {
 .nav-tabs li.tab3>a {
 	color: #FFF;
 	font-weight: 800;
+}
+
+table {
+	width: 100%;
 }
 
 .table-small {

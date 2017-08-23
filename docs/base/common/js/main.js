@@ -1,14 +1,39 @@
 (function () {
 	"use strict";
 
-	/*-----smaoothScrollの設定-----*/
+	var windowW = window.innerWidth || document.documentElement.clientWidth;
+
+	/*--twitterウィジェット--*/
+
+	$.ajax({
+		url: 'data/info.txt',
+		timeout: 1000,
+		success: function (data) {
+
+			if (data.length === 0) {
+				$('.twitter-button').css({
+					'display': 'none'
+				})
+			} else {
+				var twitterWidget = $('.twitter-widget').html(data);
+
+
+			}
+		},
+		error: function () {
+			alert("Twitterの取得に失敗しました");
+		}
+	});
+
+
+	/*--smaoothScrollの設定--*/
 	smoothScroll.init({
 		speed: 800,
 		updateURL: false,
 		easing: 'easeOutQuad'
 	});
 
-	/*-----twitterButton設定-----*/
+	/*--twitterButton設定--*/
 	function leftButton() {
 		var windowH = window.innerHeight || document.documentElement.clientHeight;
 
@@ -19,7 +44,7 @@
 	$(window).on('load resize orientationchange', function () {
 		leftButton();
 	});
-	/*-----mmenu設定-----*/
+	/*--mmenu設定--*/
 	$("#leftSlidebar").mmenu({
 		slidingSubmenus: false,
 		offCanvas: {
@@ -28,28 +53,8 @@
 		}
 	});
 
-	/*--twitterウィジェット--*/
-	/*
-		$.ajax({
-			url: 'data/info.txt',
-			timeout: 1000,
-			success: function (data) {
-				console.log(data)
-				if (data.length === 0) {
-					$('.twitter-button').css({
-						'display': 'none'
-					})
-				} else {
 
-					$('.mm-panels').html = data;
-				}
-			},
-			error: function () {
-				alert("「お知らせ」の取得に失敗しました");
-			}
-		});
 
-	*/
 
 	/*-----注意案内の作成-----*/
 	//注意文の読み込み
@@ -101,7 +106,7 @@
 		fixContent.style.top = windowH + scrollTop + 70 - fixH + 'px';
 	}
 /*
-	/*-----headerの縮小-----*/
+	/*--headerの縮小--*/
 	// スクロールして何ピクセルでアニメーションさせるか
 	var px_change = 300;
 	// スクロールのイベントハンドラを登録
@@ -115,7 +120,7 @@
 		}
 	});
 
-	/*-----基本設定-----*/
+	/*--基本設定--*/
 	//イベントの日時
 	csvToArray('data/date.csv', function (data) {
 		var dataLen = data.length;
@@ -123,7 +128,7 @@
 		var dateArea = document.querySelector('.home_date');
 		var div = document.createElement('div');
 		div.classList.add('home_eventInfo');
-		dateArea.appendChild(div);
+		dateArea.insertBefore(div, dateArea.firstChild);
 		for (i; i < dataLen; i++) {
 
 			var ul = document.createElement('ul');
@@ -195,7 +200,7 @@
 			image.onload = function () {
 				var width = image.width;
 				var height = image.height;
-				var windowW = window.innerWidth || document.documentElement.clientWidth;
+
 				if (width < height && windowW > 768) {
 					var imgClass = document.querySelector('.mainImg_img');
 					imgClass.style.width = '60%';
@@ -204,6 +209,13 @@
 			};
 		}
 
+		/*--headerの高さ設定--*/
+		var siteTitle = document.querySelector('.header_siteTitle');
+		var mainImgArea = document.querySelector('.mainImg')
+		var headerHeight = siteTitle.offsetHeight;
+		mainImgArea.style.paddingTop = headerHeight + 20 + 'px';
+
+		console.log(headerHeight);
 		//雨天時の注意
 		if (data[1][4]) {
 			var caution = document.createElement('div');
@@ -211,9 +223,16 @@
 			caution.classList.add('home_eventTime_caution');
 			document.querySelector('.home_date').appendChild(caution);
 		}
-	});
 
-	/*-----イベントスケジュールの作成-----*/
+		//その他
+		if (data[1][5]) {
+			var eventDescription = document.createElement('div');
+			eventDescription.innerHTML = data[1][5];
+			eventDescription.classList.add('home_description');
+			document.querySelector('.home_date').appendChild(eventDescription);
+		}
+	});
+	/*--イベントスケジュールの作成--*/
 	//アクセス
 	csvToArray('data/access.csv', function (data) {
 		//場所
@@ -280,9 +299,10 @@
 	//イベントのお知らせ
 	csvToArray('data/event-info.csv', function (data) {
 		var dataLen = data.length;
+
 		var eventInfoArea = document.querySelector('.event_info');
-		if (data[1][0]) {
-			for (var i = 1; i < dataLen; i++) {
+		if (data[0][0]) {
+			for (var i = 0; i < dataLen; i++) {
 				for (var j = 0; j < data[i].length; j++) {
 					var div = document.createElement('div');
 					if (j > 0) {
@@ -316,15 +336,16 @@
 			createEventTable(data, k);
 			createSmallerTable(k);
 		}
+		csvToArray('data/event-2.csv', function (data) {
+			var k = 2;
+			if (data[0][0]) {
+				createEventTable(data, k);
+				createSmallerTable(k);
+			}
+		});
 	});
 
-	csvToArray('data/event-2.csv', function (data) {
-		var k = 2;
-		if (data[0][0]) {
-			createEventTable(data, k);
-			createSmallerTable(k);
-		}
-	});
+
 
 	//主催・後援・協力・協賛
 	csvToArray('data/sponsors.csv', function (data) {
@@ -520,15 +541,18 @@
 					if (tableObj.rows[i].cells[j] == tableObj.rows[i].cells[0]) {
 						var th = document.createElement('th');
 						th.innerHTML = tableObj.rows[i].cells[0].innerHTML;
-						th.setAttribute('colspan', '2');
+						if (cellsLen > 3) { //イベント項目が2つ以上あったら
+							th.setAttribute('colspan', '2');
+						}
 						th.classList.add('eventTime');
 						tr.appendChild(th);
 					} else {
 						//thを作成
-						var _th = document.createElement('th');
-						_th.innerHTML = tableObj.rows[0].cells[j].innerHTML;
-						tr.appendChild(_th);
-
+						if (cellsLen > 3) {　　 //イベント項目が2つ以上あったら
+							var _th = document.createElement('th');
+							_th.innerHTML = tableObj.rows[0].cells[j].innerHTML;
+							tr.appendChild(_th);
+						}
 						//tdを作成
 						var td = document.createElement('td');
 						td.innerHTML = tableObj.rows[i].cells[j].innerHTML;
@@ -541,26 +565,30 @@
 			}
 		}
 	}
-}());
 
-//CSVを配列にする
-function csvToArray(filename, cb) {
-	$.get(filename, function (csvdata, status) {
-		var ret = [];
-		if (status == 'success') {
-			csvdata = csvdata.replace(/\r/gm, "");
-			var line = csvdata.split("\n");
 
-			var i = 0;
-			for (i in line) {
-				//空行はスルーする。
-				if (line[i].length === 0) {
-					continue;
+	//CSVを配列にする
+	function csvToArray(filename, cb) {
+		$.get(filename, function (csvdata, status) {
+			var ret = [];
+			if (status == 'success') {
+				csvdata = csvdata.replace(/\r/gm, "");
+				var line = csvdata.split("\n");
+
+				var i = 0;
+				for (i in line) {
+					//空行はスルーする。
+					if (line[i].length === 0) {
+						continue;
+					}
+					var row = line[i].split(",");
+					ret.push(row);
 				}
-				var row = line[i].split(",");
-				ret.push(row);
 			}
-		}
-		cb(ret);
-	});
-}
+			cb(ret);
+		});
+	}
+
+
+
+}());
